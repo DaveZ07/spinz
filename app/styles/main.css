@@ -1,0 +1,21 @@
+@import 'tailwind.css';
+@import 'layout.css';
+@import 'transitions.css';
+
+@layer base {
+  body {
+    @apply bg-background-800 text-white;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply text-balance;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+
+  img {
+    @apply select-none pointer-events-none;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+    },
+    "prettier.enable": false,
+    "eslint.useFlatConfig": true,
+    "tailwindCSS.classAttributes": ["([a-zA-Z0-9-_]+-)?class"],
+    "tailwindCSS.experimental.classRegex": [
+      ["([a-zA-Z0-9-_]+-)?class\\s*=\\s*\"([^\"]*)\""],
+      ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "cpylua.language-postcss",
+      "usernamehw.errorlens",
+      "vue.volar",
+      "nuxt.mdc"
+    ]
+  }
+}

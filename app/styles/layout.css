@@ -1,0 +1,23 @@
+@layer utilities {
+  .content-grid {
+    --_padding-inline: theme(spacing.content-spacing);
+    --_content-max-width: theme(maxWidth.content);
+
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns:
+      [full-width-start]
+      minmax(var(--_padding-inline), 1fr)
+      [content-start]
+      min(50% - (var(--_padding-inline) * 2), var(--_content-max-width) / 2 - var(--_padding-inline))
+      [column-start]
+      var(--_padding-inline)
+      [center]
+      var(--_padding-inline)
+      [column-end]
+      min(50% - (var(--_padding-inline) * 2), var(--_content-max-width) / 2 - var(--_padding-inline))
+      [content-end]
+      minmax(var(--_padding-inline), 1fr)
+      [full-width-end];
+  }
+}
