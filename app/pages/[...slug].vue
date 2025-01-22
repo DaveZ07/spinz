@@ -19,6 +19,11 @@ if (!page.value) {
 }
 
 if (page.value) {
-  useSeoMeta(page.value.seo)
+  const { description, title, ...seo } = page.value.seo
+
+  const parsedTitle = title ? { title } : {}
+  const parsedDescription = description ? { description, ogDescription: description, twitterDescription: description } : {}
+
+  useSeoMeta({ ...parsedTitle, ...parsedDescription, ...seo })
 }
 </script>

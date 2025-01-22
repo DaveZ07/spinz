@@ -1,11 +1,10 @@
-import scrollbar from 'tailwind-scrollbar'
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
 import threed from 'tailwindcss-3d'
 import animate from 'tailwindcss-animate'
 
 export default {
-  content: ['./app/**/*.{vue,ts}'],
+  content: ['./app/**/*.{vue,ts}', './content/**/*.md'],
   darkMode: ['class'],
   safelist: ['dark'],
   prefix: '',
@@ -56,7 +55,7 @@ export default {
       },
       spacing: {
         header: '5.5rem', /* 80px */
-        'content-spacing': '0.75rem', /* 12px */
+        'content-spacing': '1rem', /* 12px */
         content: 'calc(100svh - 5.5rem)',
 
         lh: '1lh'
@@ -75,7 +74,7 @@ export default {
       }
     }
   },
-  plugins: [animate, threed, scrollbar, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
+  plugins: [animate, threed, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
     addVariant('link-active', '&.router-link-active')
     addVariant('link-exact-active', '&.router-link-exact-active')
 

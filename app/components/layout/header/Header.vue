@@ -20,7 +20,20 @@
         />
       </svg>
 
-      <span class="text-[26px] font-semibold text-white">Spinz<span class="text-[#8062F9]">.gg</span></span>
+      <span class="text-[26px] font-semibold text-white">Spinz<span class="text-primary-600">.gg</span></span>
     </NuxtLink>
+
+    <Button
+      class="gap-x-3 border-2 border-primary-600 bg-primary-600/10 font-semibold text-white hover:bg-primary-600/10"
+      as-child
+    >
+      <NuxtLink to="/contact">
+        Get in touch
+      </NuxtLink>
+    </Button>
   </header>
 </template>
+
+<script setup lang="ts">
+import { Button } from '@ui/button'
+</script>

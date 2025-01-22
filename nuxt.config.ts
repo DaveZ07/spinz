@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/fonts',
+    '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
@@ -26,37 +27,53 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'SPINZ.GG',
+      title: 'Spinz.gg',
       meta: [
         {
           name: 'description',
-          content: 'SPINZ.GG'
+          content: 'Spinz.gg'
         },
         {
           name: 'theme-color',
-          content: '#8062f9'
+          content: '#6938f0'
         }
       ]
     }
   },
   site: {
-    name: 'SPINZ.GG',
+    name: 'Spinz.gg',
+    url: BASE_URL,
     indexable: !BOOL_ROBOTS_DISABLED
   },
   colorMode: { classSuffix: '' },
   runtimeConfig: {
+    MAILER_RECIPIENT: '', MAILER_SERVICE: '', MAILER_USER: '', MAILER_PASS: '',
     public: { BASE_URL }
   },
   alias: {
     '@layout': fileURLToPath(new URL('./app/components/layout', import.meta.url)),
+    '@base': fileURLToPath(new URL('./app/components/base', import.meta.url)),
     '@ui': fileURLToPath(new URL('./app/components/ui', import.meta.url))
   },
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2025-01-01',
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vueuse/core',
+        'radix-vue',
+        'embla-carousel-vue',
+        'vee-validate',
+        '@vee-validate/rules',
+        'class-variance-authority',
+        'clsx',
+        'tailwind-merge'
+      ]
+    }
+  },
   eslint: { config: { stylistic: true } },
   robots: {
     allow: ['/'],
-    disallow: ['/dashboard', '/profile'],
     blockNonSeoBots: true,
     blockAiBots: true,
     credits: false
