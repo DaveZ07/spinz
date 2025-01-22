@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/fonts',
+    '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',

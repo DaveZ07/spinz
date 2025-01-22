@@ -7,7 +7,7 @@
       v-if="isDebugMode"
       class="relative z-10 w-full max-w-[100vw] self-start overflow-hidden p-content-spacing"
     >
-      <pre class="overflow-auto border-2 border-primary-500 p-content-spacing">{{ props.error }}</pre>
+      <pre class="overflow-auto border-2 border-primary-600 p-content-spacing">{{ props.error }}</pre>
       <div class="absolute inset-content-spacing -z-10 bg-black/50" />
     </div>
 

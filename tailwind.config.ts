@@ -56,7 +56,7 @@ export default {
       },
       spacing: {
         header: '5.5rem', /* 80px */
-        'content-spacing': '0.75rem', /* 12px */
+        'content-spacing': '1rem', /* 12px */
         content: 'calc(100svh - 5.5rem)',
 
         lh: '1lh'
