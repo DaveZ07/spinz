@@ -20,39 +20,15 @@
         />
       </svg>
 
-      <span class="text-[26px] font-semibold text-white">Spinz<span class="text-[#8062F9]">.gg</span></span>
+      <span class="text-[26px] font-semibold text-white">Spinz<span class="text-primary-600">.gg</span></span>
     </NuxtLink>
-
-    <nav class="ml-auto text-lg">
-      <ul class="flex gap-x-8">
-        <li>
-          <NuxtLink to="/">
-            Home
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/contact">
-            Contact
-          </NuxtLink>
-        </li>
-      </ul>
-    </nav>
 
     <Button
       class="gap-x-3 border-2 border-primary-600 bg-primary-600/10 font-semibold text-white hover:bg-primary-600/10"
       as-child
     >
       <NuxtLink to="/contact">
-        <span>
-          Get in touch
-        </span>
-
-        <div class="size-6">
-          <Icon
-            name="material-symbols-light:arrow-outward"
-            class="size-full"
-          />
-        </div>
+        Get in touch
       </NuxtLink>
     </Button>
   </header>
