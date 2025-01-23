@@ -1,6 +1,6 @@
 <template>
   <CarouselItem>
-    <div class="rounded-lg border border-grayscale-400/15 bg-background-900">
+    <div class="size-full rounded-lg border border-grayscale-400/15 bg-background-900">
       <div class="space-y-6 p-6">
         <template v-if="$slots.title">
           <div class="text-3xl font-medium">

@@ -2,9 +2,9 @@
   <section :class="cn('py-16 content-grid lg:py-24', props.class)">
     <div
       class="col-content"
-      :class="{ 'grid items-center gap-x-6 gap-y-10 lg:grid-rows-1': props.image, 'lg:grid-cols-[4fr_6fr]': props.side === 'left', 'lg:grid-cols-[6fr_4fr]': props.side === 'right' }"
+      :class="{ 'grid items-center gap-x-6 gap-y-10 lg:grid-rows-1': $slots.image, 'lg:grid-cols-[4fr_6fr]': props.side === 'left', 'lg:grid-cols-[6fr_4fr]': props.side === 'right' }"
     >
-      <div :class="{ 'lg:p-8': props.image }">
+      <div :class="{ 'lg:p-8': $slots.image }">
         <template v-if="$slots.label">
           <div class="mb-8 w-fit rounded-full border border-primary-500/[0.12] bg-primary-500/10 px-4 py-2 text-primary-400">
             <slot
@@ -44,16 +44,12 @@
         </template>
       </div>
 
-      <template v-if="props.image">
+      <template v-if="$slots.image">
         <div
-          class="row-[1]"
+          class="row-[1] [&>img]:size-full [&>img]:rounded-lg"
           :class="{ 'lg:col-[1]': props.side === 'left', 'lg:col-[2]': props.side === 'right' }"
         >
-          <NuxtImg
-            :src="props.image"
-            alt=""
-            class="size-full rounded-lg"
-          />
+          <slot name="image" />
         </div>
       </template>
     </div>
@@ -68,7 +64,6 @@ import { cn } from '@/lib/utils'
 import { Button } from '@ui/button'
 
 interface BannerProps {
-  image?: string
   side?: 'left' | 'right'
   class?: HTMLAttributes['class']
 }

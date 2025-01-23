@@ -119,6 +119,6 @@ import { Button } from '@ui/button'
 .sfc-gradient::before {
   @apply absolute content-[''] h-[200%] aspect-square left-1/2 -translate-x-1/2 origin-bottom;
   background-image: radial-gradient(50% 50% at 50% 50%, theme('colors.primary.600') 0%, transparent 100%);
-  animation: wave 3s infinite theme('animationTimingFunction.in-out') calc(var(--index) * 0.15s);
+  animation: wave 5s infinite theme('animationTimingFunction.in-out') calc(var(--index) * 0.15s);
 }
 </style>

@@ -17,14 +17,46 @@ Get Started
 ---
 class: bg-background-950
 ---
+  :::carousel-item
+  #title
+  Content Strategy Development
+
+  #description
+  Boost engagement with high-impact, data-driven content strategies.
+  :::
 
   :::carousel-item
   #title
   Content Strategy Development
-  
+
   #description
   Boost engagement with high-impact, data-driven content strategies.
   :::
+
+  :::carousel-item
+  #title
+  Analytics and Reporting
+
+  #description
+  Transparent insights to optimize every campaign.
+  :::
+
+  :::carousel-item
+  #title
+  Consulting Services
+
+  #description
+  Personalized advice to navigate the ever-changing world of influencer marketing.
+  :::
+
+  :::carousel-item
+  #title
+  Influencer Campaign Management
+
+  #description
+  From finding the perfect influencers to delivering measurable results.
+  :::
+
 
 #label
 Our Services
@@ -36,10 +68,8 @@ Tailored Solutions for Every Brand
 ::banner
 ---
 class: bg-background-800
-image: /content/banner-1.jpg
 side: left
 ---
-
 #label
 About Us
 
@@ -57,7 +87,6 @@ Let's talk
 ---
 class: bg-background-1000
 ---
-
   :::highlight-item
   #title
   Global Reach, Local Expertise
@@ -105,10 +134,8 @@ At our agency, we pride ourselves on blending creativity with data-driven insigh
 ::banner
 ---
 class: bg-background-950
-image: /content/banner-2.jpg
 side: right
 ---
-
 #label
 Why Work With Us
 
