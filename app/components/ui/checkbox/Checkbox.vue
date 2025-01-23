@@ -1,7 +1,7 @@
 <template>
   <CheckboxRoot
     v-bind="forwarded"
-    :class="cn('peer size-4 shrink-0 rounded-sm border border-primary-600 ring-offset-background-800 data-[state=checked]:bg-primary-600 data-[state=checked]:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50', props.class)"
+    :class="cn('peer size-4 shrink-0 rounded-sm border border-primary-600 ring-offset-background-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary-600 data-[state=checked]:text-white', props.class)"
   >
     <CheckboxIndicator class="flex size-full items-center justify-center text-current">
       <slot>

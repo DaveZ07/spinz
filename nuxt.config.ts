@@ -47,6 +47,7 @@ export default defineNuxtConfig({
   },
   colorMode: { classSuffix: '' },
   runtimeConfig: {
+    MAILER_RECIPIENT: '', MAILER_SERVICE: '', MAILER_USER: '', MAILER_PASS: '',
     public: { BASE_URL }
   },
   alias: {

@@ -1,7 +1,5 @@
-import scrollbar from 'tailwind-scrollbar'
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
-import threed from 'tailwindcss-3d'
 import animate from 'tailwindcss-animate'
 
 export default {
@@ -75,7 +73,7 @@ export default {
       }
     }
   },
-  plugins: [animate, threed, scrollbar, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
+  plugins: [animate, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
     addVariant('link-active', '&.router-link-active')
     addVariant('link-exact-active', '&.router-link-exact-active')
 

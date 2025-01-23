@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import { email, required } from '@vee-validate/rules'
 import { useForm, useIsFormValid } from 'vee-validate'
 
 import { Button } from '@ui/button'
@@ -43,10 +42,10 @@ import ContactFormTextarea from './ContactFormTextarea.vue'
 
 const { handleSubmit, isSubmitting } = useForm({
   validationSchema: {
-    name: [required],
-    email: [required, email],
-    message: [required],
-    terms: [required]
+    name: 'required',
+    email: 'required|email',
+    message: 'required',
+    terms: 'checkbox'
   },
   initialValues: {
     name: '',
@@ -58,7 +57,7 @@ const { handleSubmit, isSubmitting } = useForm({
 
 const isFormValid = useIsFormValid()
 
-const handleFormSubmit = handleSubmit((values) => {
-  console.log(values)
+const handleFormSubmit = handleSubmit(async (values) => {
+  await $fetch('/api/mailer', { method: 'POST', body: JSON.stringify(values) })
 })
 </script>
