@@ -16,9 +16,8 @@ const getPublicPath = (path: string) => withoutTrailingSlash(withBase(path, conf
 
 useHead({ htmlAttrs: { lang: 'en', dir: 'ltr' } })
 
-const title = '%s | SPING.GG'
-const description = 'SPING.GG – Leading influencer marketing agency with data-driven campaigns. Connect with authentic influencers to boost engagement and achieve measurable success.'
-
+const title = '%s | Spinz.gg'
+const description = 'Leading influencer marketing agency with data-driven campaigns. Connect with authentic influencers to boost engagement and achieve measurable success.'
 // TODO: Add og:image and twitter:image
 const ogImage = getPublicPath('/assets/socials/og-image.jpg')
 const twitterImage = getPublicPath('/assets/socials/twitter-image.jpg')

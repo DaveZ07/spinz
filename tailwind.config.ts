@@ -5,7 +5,7 @@ import threed from 'tailwindcss-3d'
 import animate from 'tailwindcss-animate'
 
 export default {
-  content: ['./app/**/*.{vue,ts}'],
+  content: ['./app/**/*.{vue,ts}', './content/**/*.md'],
   darkMode: ['class'],
   safelist: ['dark'],
   prefix: '',

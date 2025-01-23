@@ -27,11 +27,11 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'SPINZ.GG',
+      title: 'Spinz.gg',
       meta: [
         {
           name: 'description',
-          content: 'SPINZ.GG'
+          content: 'Spinz.gg'
         },
         {
           name: 'theme-color',
@@ -41,7 +41,8 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    name: 'SPINZ.GG',
+    name: 'Spinz.gg',
+    url: BASE_URL,
     indexable: !BOOL_ROBOTS_DISABLED
   },
   colorMode: { classSuffix: '' },
@@ -50,14 +51,28 @@ export default defineNuxtConfig({
   },
   alias: {
     '@layout': fileURLToPath(new URL('./app/components/layout', import.meta.url)),
+    '@base': fileURLToPath(new URL('./app/components/base', import.meta.url)),
     '@ui': fileURLToPath(new URL('./app/components/ui', import.meta.url))
   },
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2025-01-01',
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vueuse/core',
+        'radix-vue',
+        'embla-carousel-vue',
+        'vee-validate',
+        '@vee-validate/rules',
+        'class-variance-authority',
+        'clsx',
+        'tailwind-merge'
+      ]
+    }
+  },
   eslint: { config: { stylistic: true } },
   robots: {
     allow: ['/'],
-    disallow: ['/dashboard', '/profile'],
     blockNonSeoBots: true,
     blockAiBots: true,
     credits: false

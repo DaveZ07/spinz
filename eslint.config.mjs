@@ -96,6 +96,11 @@ export default withNuxt(
             position: 'after'
           },
           {
+            pattern: '@base{,/**}',
+            group: 'internal',
+            position: 'after'
+          },
+          {
             pattern: '@ui{,/**}',
             group: 'internal',
             position: 'after'
