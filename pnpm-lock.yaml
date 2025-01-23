@@ -65,6 +65,9 @@ importers:
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
+      tailwindcss-3d:
+        specifier: 1.0.7
+        version: 1.0.7(tailwindcss@3.4.17)
       tailwindcss-animate:
         specifier: 1.0.7
         version: 1.0.7(tailwindcss@3.4.17)
@@ -1253,6 +1256,9 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
+
+  '@swc/helpers@0.5.12':
+    resolution: {integrity: sha512-KMZNXiGibsW9kvZAO1Pam2JPTDBm+KSHMMHWdsyI/1DbIZjT2A6Gy3hblVXUMEDvUAKq+e0vL0X0o54owWji7g==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -4679,6 +4685,11 @@ packages:
   tailwind-merge@2.6.0:
     resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
 
+  tailwindcss-3d@1.0.7:
+    resolution: {integrity: sha512-WRW0HTwtBSlbFt4dztoDlCZyPHWM1wu/hn52kVqdVYrTFfgTcSCU5lNAIU+seL5eoaH7EIyQC5N4ok252ktSeQ==}
+    peerDependencies:
+      tailwindcss: '>=3.2.0'
+
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
@@ -6938,6 +6949,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@swc/helpers@0.5.12':
+    dependencies:
+      tslib: 2.8.1
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -11251,6 +11266,12 @@ snapshots:
       - supports-color
 
   tailwind-merge@2.6.0: {}
+
+  tailwindcss-3d@1.0.7(tailwindcss@3.4.17):
+    dependencies:
+      '@swc/helpers': 0.5.12
+      lodash: 4.17.21
+      tailwindcss: 3.4.17
 
   tailwindcss-animate@1.0.7(tailwindcss@3.4.17):
     dependencies:

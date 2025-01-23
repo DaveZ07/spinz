@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
+import threed from 'tailwindcss-3d'
 import animate from 'tailwindcss-animate'
 
 export default {
@@ -73,7 +74,7 @@ export default {
       }
     }
   },
-  plugins: [animate, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
+  plugins: [animate, threed, plugin(({ addUtilities, addVariant, matchUtilities, theme }) => {
     addVariant('link-active', '&.router-link-active')
     addVariant('link-exact-active', '&.router-link-exact-active')
 
