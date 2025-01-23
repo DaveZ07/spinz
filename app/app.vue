@@ -19,8 +19,8 @@ useHead({ htmlAttrs: { lang: 'en', dir: 'ltr' } })
 const title = '%s | Spinz.gg'
 const description = 'Leading influencer marketing agency with data-driven campaigns. Connect with authentic influencers to boost engagement and achieve measurable success.'
 // TODO: Add og:image and twitter:image
-const ogImage = getPublicPath('/assets/socials/og-image.jpg')
-const twitterImage = getPublicPath('/assets/socials/twitter-image.jpg')
+const ogImage = getPublicPath('/socials/og-image.jpg')
+const twitterImage = getPublicPath('/socials/twitter-image.jpg')
 
 useSeoMeta({
   titleTemplate: title,
