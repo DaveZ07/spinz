@@ -62,7 +62,10 @@ jobs:
         run: npx nuxi build --preset github_pages
         env:
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          
+          NUXT_MAILER_PASS: ${{ secrets.NUXT_MAILER_PASS }}
+NUXT_MAILER_RECIPIENT: ${{ secrets.NUXT_MAILER_RECIPIENT }}
+NUXT_MAILER_SERVICE: ${{ secrets.NUXT_MAILER_SERVICE }}
+NUXT_MAILER_USER: ${{ secrets.NUXT_MAILER_USER }}
 
       # Deployment job
       - name: Deploy 🚀
