@@ -49,7 +49,10 @@
           class="row-[1] [&>img]:size-full [&>img]:rounded-lg"
           :class="{ 'lg:col-[1]': props.side === 'left', 'lg:col-[2]': props.side === 'right' }"
         >
-          <slot name="image" />
+          <slot
+            name="image"
+            mdc-unwrap="p"
+          />
         </div>
       </template>
     </div>
@@ -68,5 +71,7 @@ interface BannerProps {
   class?: HTMLAttributes['class']
 }
 
-const props = defineProps<BannerProps>()
+const props = withDefaults(defineProps<BannerProps>(), {
+  side: 'left'
+})
 </script>
