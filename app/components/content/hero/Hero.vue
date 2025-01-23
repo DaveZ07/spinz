@@ -94,15 +94,31 @@ import { Button } from '@ui/button'
 
 <style scoped lang="postcss">
 @keyframes wave {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: scaleY(0.8) rotate(2deg);
+    opacity: 0.6;
+  }
   50% {
-    transform: scaleY(0.7);
-    opacity: 0.5;
+    transform: scaleY(0.6) rotate(-2deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: scaleY(0.8) rotate(1deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleY(1) rotate(0deg);
+    opacity: 0.8;
   }
 }
 
 .sfc-gradient::before {
-  @apply absolute content-[''] h-[200%] aspect-square left-1/2 -translate-x-1/2;
+  @apply absolute content-[''] h-[200%] aspect-square left-1/2 -translate-x-1/2 origin-bottom;
   background-image: radial-gradient(50% 50% at 50% 50%, theme('colors.primary.600') 0%, transparent 100%);
-  animation: wave 2s infinite theme('animationTimingFunction.in-out') calc(var(--index) * 0.1s);
+  animation: wave 3s infinite theme('animationTimingFunction.in-out') calc(var(--index) * 0.15s);
 }
 </style>
