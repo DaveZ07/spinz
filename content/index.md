@@ -20,7 +20,7 @@ class: bg-background-950
   :::carousel-item
   #title
   Content Strategy Development
-
+  
   #description
   Boost engagement with high-impact, data-driven content strategies.
   :::
@@ -28,7 +28,7 @@ class: bg-background-950
   :::carousel-item
   #title
   Content Strategy Development
-
+  
   #description
   Boost engagement with high-impact, data-driven content strategies.
   :::
@@ -36,7 +36,7 @@ class: bg-background-950
   :::carousel-item
   #title
   Analytics and Reporting
-
+  
   #description
   Transparent insights to optimize every campaign.
   :::
@@ -44,7 +44,7 @@ class: bg-background-950
   :::carousel-item
   #title
   Consulting Services
-
+  
   #description
   Personalized advice to navigate the ever-changing world of influencer marketing.
   :::
@@ -52,11 +52,10 @@ class: bg-background-950
   :::carousel-item
   #title
   Influencer Campaign Management
-
+  
   #description
   From finding the perfect influencers to delivering measurable results.
   :::
-
 
 #label
 Our Services
@@ -81,6 +80,9 @@ As a Malta-based influencer marketing agency, we specialize in crafting authenti
 
 #cta
 Let's talk
+
+#image
+![banner-1.jpg](/content/banner-1.jpg)
 ::
 
 ::highlight
@@ -146,4 +148,7 @@ Let's Elevate Your Brand Together
 At our core, we believe in the transformative power of collaboration. Whether you're a rising startup or an established brand, we'll help you unlock new opportunities in the influencer-driven digital space.
 
 Imagine your campaigns reaching the right audience, at the right time, with the right message – all while building trust and loyalty. Ready to grow? Let's make it happen.
+
+#image
+![banner-2.jpg](/content/banner-2.jpg)
 ::
