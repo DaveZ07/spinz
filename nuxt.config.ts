@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxthub/core'
   ],
   components: {
     dirs: ['@/components/content'],
